@@ -1,0 +1,51 @@
+.footer-container {
+  width: 100%;
+  background-color: #07477a;
+}
+
+.footer-address {
+  padding: 3vw;
+}
+
+.footer-card {
+  background-color: #fff;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 3vw;
+  margin: 3vw 0;
+  gap: 3vw;
+}
+
+.footer-card h3 {
+  color: #25a0d8;
+}
+
+.footer-shape {
+  width: 100vw;
+  position: relative;
+}
+
+.footer-end {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 5vw;
+}
+
+.footer-card select {
+  color: #00537c;
+  font-size: 14px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: 1px solid lightgray;
+}
