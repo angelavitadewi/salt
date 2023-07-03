@@ -1,16 +1,15 @@
-.slider-container {
+.carousel-container {
   display: flex;
-  flex: 1 1 auto;
   flex-direction: column;
   padding: 5vw;
   gap: 5vw;
   background-color: white;
 }
 
-.slider-container h1 {
+.carousel-container h1 {
   color: #029fe4;
 }
 
-.slider-container h3 {
+.carousel-container h3 {
   color: #777;
 }

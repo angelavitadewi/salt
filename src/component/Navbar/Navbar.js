@@ -18,13 +18,11 @@ export const Navbar = () => {
         <img src={burger} className='burger' alt='burger' onClick={handleNavbar} />
         <div className='navbar-item-container'>
           <Link to='/'>Home</Link>
-          <Link to='about'>About</Link>
         </div>
       </div>
       {show && (
         <div className='responsive-navbar-item-container'>
           <Link to='/'>Home</Link>
-          <Link to='about'>About</Link>
         </div>
       )}
     </>

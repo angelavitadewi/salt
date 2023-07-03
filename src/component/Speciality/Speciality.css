@@ -1,0 +1,21 @@
+.special-container {
+  background-color: #509fdd;
+  padding: 6vw 5vw;
+}
+
+.special-card {
+  background-color: #fff;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 5vw;
+  gap: 5vw;
+}
+
+.special-container h1 {
+  color: #029fe4;
+}
+
+.special-container h3 {
+  color: #777;
+}

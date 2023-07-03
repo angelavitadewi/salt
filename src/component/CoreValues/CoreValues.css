@@ -1,0 +1,23 @@
+.core-value-container {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 5vw;
+  gap: 5vw;
+  background-color: #f8f8f8;
+}
+
+.core-value-container h1 {
+  color: #029fe4;
+  text-align: center;
+}
+
+.core-value-container h3 {
+  color: #777;
+}
+
+.core-value-container ul {
+  font-size: 8vw;
+  font-weight: 500;
+  list-style-type: '-';
+}
