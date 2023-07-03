@@ -1,0 +1,28 @@
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap-pagination-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrap-pagination-container button {
+  border: none;
+  background-color: #1ba0e1;
+  color: #ffffff;
+  font-size: 4vw;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.wrap-pagination-container button:disabled,
+.wrap-pagination-container button[disabled] {
+  background-color: lightgray;
+  color: #b6b6b6;
+  cursor: not-allowed;
+}
