@@ -2,7 +2,7 @@ import './Footer.css';
 import logoFooter from '../../assets/logoFooter.svg';
 import footer from '../../assets/footer.svg';
 
-export const Footer = () => {
+export const Footer = (props) => {
   return (
     <>
       <div className='footer-container'>
@@ -18,9 +18,27 @@ export const Footer = () => {
         <div className='footer-shape'>
           <img src={footer} alt='footer' className='footer-shape' />
           <div className='footer-end'>
-            <h3>Who We Are</h3>
-            <h3>Our Values</h3>
-            <h3>The Perks</h3>
+            <h3
+              onClick={() => {
+                props.sliderRef.current.scrollIntoView();
+              }}
+            >
+              Who We Are
+            </h3>
+            <h3
+              onClick={() => {
+                props.valueRef.current.scrollIntoView();
+              }}
+            >
+              Our Values
+            </h3>
+            <h3
+              onClick={() => {
+                props.perkRef.current.scrollIntoView();
+              }}
+            >
+              The Perks
+            </h3>
           </div>
         </div>
       </div>

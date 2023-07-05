@@ -3,7 +3,6 @@ import { Slider } from '../component/Common/Slider/Slider';
 import { CoreValues } from '../component/CoreValues/CoreValues';
 import { Speciality } from '../component/Speciality/Speciality';
 
-
 const listSlider = [
   {
     header: 'Who we are',
@@ -21,12 +20,13 @@ const listSlider = [
     desc: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse sequam nihil molestiae consequatur.',
   },
 ];
-export const Home = () => (
-  <>
-    <Banner />
-    <Slider content={listSlider} />
-    <CoreValues />
-    <Speciality />
-    
-  </>
-);
+export const Home = (props) => {
+  return (
+    <>
+      <Banner />
+      <Slider content={listSlider} sliderRef={props.sliderRef} />
+      <CoreValues valueRef={props.valueRef} />
+      <Speciality perkRef={props.perkRef} />
+    </>
+  );
+};

@@ -17,9 +17,9 @@ const listCoreValue = [
   },
 ];
 
-export const CoreValues = () => {
+export const CoreValues = ({ valueRef }) => {
   return (
-    <div className='core-value-container'>
+    <div className='core-value-container' ref={valueRef}>
       <h1>Our Core Values</h1>
       <h3>
         Ridiculus laoreet libero pretium et, sit vel elementum convallis fames. Sit suspendisse etiam eget egestas.

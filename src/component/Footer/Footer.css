@@ -38,6 +38,10 @@
   gap: 5vw;
 }
 
+.footer-end h3 {
+  cursor: pointer;
+}
+
 .footer-card select {
   color: #00537c;
   font-size: 14px;

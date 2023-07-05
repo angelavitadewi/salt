@@ -3,7 +3,7 @@ import './Slider.css';
 import { SliderContent } from './Subcomponent/SliderContent';
 import { Pagination } from './Subcomponent/Pagination';
 
-export const Slider = ({ content }) => {
+export const Slider = ({ content, sliderRef }) => {
   const [count, setCount] = useState(0);
 
   const handleChangeSlider = (isNext) => {
@@ -16,7 +16,7 @@ export const Slider = ({ content }) => {
   return (
     <>
       {content?.length && (
-        <div className='slider-container'>
+        <div className='slider-container' ref={sliderRef}>
           {content
             .filter((item, index) => index === count)
             .map((item, index) => (

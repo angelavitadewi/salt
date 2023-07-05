@@ -22,9 +22,9 @@ const listCarousel = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod libero vel leo auctor, in venenatis nulla consequat. Sed commodo nunc sit amet congue aliquam.',
   },
 ];
-export const Speciality = () => {
+export const Speciality = ({ perkRef }) => {
   return (
-    <div className='special-container'>
+    <div className='special-container' ref={perkRef}>
       <div className='special-card'>
         <h1>OUR SPECIALITY</h1>
         <h3>
